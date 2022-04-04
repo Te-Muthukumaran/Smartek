@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Register Page </title>
+<script type="text/javascript" src="validation.js"></script>
+
+</head>
+<body bgcolor="Lightskyblue">
+<h2 ALIGN="CENTER">Registration form</h2>
+
+<form name="myform" action="register" onsubmit="return validateForm()" method="get">
+<table border="0" align="center">
+<tbody>
+
+<tr>
+<td><label for="name">FirstName: </label></td>
+<td><input type="text" name="firstname" size="15" /></td>
+</tr>
+
+<tr>
+<td><label for="name">LastName: </label></td>
+<td><input type="text" name="lastname" size="15" /></td>
+</tr>
+
+<tr>
+<td><label for="age">Age: </label></td>
+<td><input type="number" min="1" max="100" name="ageselect" /></td>
+</tr>
+
+<tr>
+<td><label for="branch">Branch: </label></td>
+<td><input id="branch" maxlength="50" name="branch" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="gender">Gender: </label></td>
+<td><input type="radio" name="gender"/> Male</td>
+<td><input type="radio" name="gender"/> Female</td>
+<td><input type="radio" name="gender"/> Other</td>
+</tr>
+
+
+<tr>
+<td align="right"><input type="submit" value="Submit" /></td>
+</tr>
+
+</tbody>
+</table>
+</form>
+
+   
+</body>
+</html>
